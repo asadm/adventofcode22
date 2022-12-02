@@ -19,12 +19,13 @@ fn main() {
         currentElvCals = currentElvCals + line.parse::<i32>().unwrap();;
       }
 
-      if (currentElvCals > maxElvCals ) {
+      if (currentElvCals > maxElvCals) {
         maxElvCals = currentElvCals;
       }
     }
     let firstThreeSum = allElves[0] + allElves[1] + allElves[2];
     // println!("{:?}", allElves);
 
-    println!("\n{firstThreeSum}");
+    println!("Part1: {maxElvCals}"); // PART1
+    println!("Part2: {firstThreeSum}");  // PART2
 }
